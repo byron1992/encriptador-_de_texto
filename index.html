@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Encriptador de Texto Byron</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="Encriptar">
+            <textarea 
+              name="texto_a_cambiar"
+              rows="10" cols="30"
+              class="texto_a_cambiar"
+              id="texto_a_cambiar"
+              placeholder="Ingrese texto aquí"
+            ></textarea>
+            <div class="terminos">
+                <p>Ingrese solo letras minúsculas y sin acento</p>
+            </div>
+            <div class="botones">
+                <button class="btn_encriptar" type="button" onclick="encriptar()">Encriptar</button>
+                <input type="button" class="btn_desencriptar" value="Desencriptar" onclick="desencriptar()">
+            </div>
+        </div>
+        <div class="encriptado">
+            <img src="imagenes/Muneco.png" alt="" id="muneco">
+            <div class="mensaje_encriptado" id="mensaje_encriptado">
+                <h2 id="titulo_mensaje">Ningún mensaje fue encontrado</h2>
+                <p id="parrafo">Ingresa el texto que desea encriptar </p>
+                <!-- <textarea name="mensaje" id="mensaje" cols="30" rows="10" class="mensaje"
+                ></textarea> -->
+            </div>
+        </div>
+    </div>
+</body>
+<script src="codigo.js"></script>
+</html>
